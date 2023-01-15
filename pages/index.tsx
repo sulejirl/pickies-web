@@ -146,6 +146,214 @@ export default function Home({
 						consequat.
 					</div>
 				</div>
+				<div style={{
+					width: "100%",
+					height: "600px",
+					padding: "50px 50px",
+					background: " #fffdedff",
+					position: "relative",
+					display: "grid",
+					gridTemplateColumns: " 1fr 1fr 1fr",
+					gridTemplateRows: "1fr",
+					gap: "0px 10px",
+					gridTemplateAreas: " 'partner user contactus'",
+					justifyItems: "center",
+					alignItems: "center",
+					fontFamily: "Work Sans",
+				}}>
+					<div style={{
+						gridArea: "partner",
+						width: "100%",
+						height: "100%",
+						borderRight: "1px solid black",
+
+						gap: "10px 0px",
+						display: "grid",
+						gridTemplateRows: " 100px 30px 200px 50px",
+						gridTemplateColumns: "1fr",
+						gridTemplateAreas: " 'icon' 'title' 'content' 'button'	",
+						padding: '50px',
+					}}>
+						<div style={{
+							gridArea: "icon",
+							width: "100%",
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+
+						}}>
+							<Image
+								src={"/images/partnerIcon.png"}
+								alt="partner"
+								width={50}
+								height={40}
+								style={{
+								}}
+							/>
+						</div>
+						<div style={{
+							gridArea: "title",
+							width: "100%",
+							display: 'flex',
+							justifyContent: 'center',
+							alignItems: 'center',
+
+						}}>
+							PARTNERLERİMİZ İÇİN
+						</div>
+						<div style={{
+							gridArea: "content",
+							width: "100%",
+							textAlign: "center",
+
+						}}>
+							Sıra beklememek için sizi es geçen müşterilerinizi kaybetmeyin. Bizimle ortaklık kurarak işinizi büyütün ve yeni müşterilere ulaşın.
+						</div>
+						<div style={{
+							gridArea: "button",
+							width: "100%",
+							textAlign: "center",
+							color: "#53beb3ff",
+							textDecoration: "underline",
+
+							cursor: "pointer",
+
+						}}>
+							FORMU DOLDUR
+						</div>
+					</div>
+					<div style={{
+						gridArea: "user",
+						width: "100%",
+						height: "100%",
+						borderRight: "1px solid black",
+
+						gap: "10px 0px",
+						display: "grid",
+						gridTemplateRows: " 100px 30px 200px 50px",
+						gridTemplateColumns: "1fr",
+						gridTemplateAreas: " 'icon' 'title' 'content' 'button'	",
+						padding: '50px',
+					}}>
+						<div style={{
+							gridArea: "icon",
+							width: "100%",
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+
+						}}>
+							<Image
+								src={"/images/userIcon.png"}
+								alt="partner"
+								width={40}
+								height={50}
+								style={{
+								}}
+							/>
+						</div>
+						<div style={{
+							gridArea: "title",
+							width: "100%",
+							display: 'flex',
+							justifyContent: 'center',
+							alignItems: 'center',
+
+						}}>
+							KULLANICILARIMIZ İÇİN
+						</div>
+						<div style={{
+							gridArea: "content",
+							width: "100%",
+							textAlign: "center",
+
+
+						}}>
+							Bulunduğunuz
+							bölgedeki cafe ve
+							restoranlardan anında
+							sipariş oluşturun,
+							siparişinizi sıra
+							beklemeden
+							teslim alın.
+						</div>
+						<div style={{
+							gridArea: "button",
+							width: "100%",
+							textAlign: "center",
+							color: "#53beb3ff",
+							textDecoration: "underline",
+							cursor: "pointer",
+
+						}}>
+							UYGULAMAYI İNDİR
+						</div>
+					</div>
+					<div style={{
+						gridArea: "contactus",
+						width: "100%",
+						height: "100%",
+
+						gap: "10px 0px",
+						display: "grid",
+						gridTemplateRows: " 100px 30px 200px 50px",
+						gridTemplateColumns: "1fr",
+						gridTemplateAreas: " 'icon' 'title' 'content' 'button'	",
+						padding: '50px',
+
+					}}>
+						<div style={{
+							gridArea: "icon",
+							width: "100%",
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+
+						}}>
+							<Image
+								src={"/images/contactUsIcon.png"}
+								alt="partner"
+								width={40}
+								height={40}
+								style={{
+								}}
+							/>
+						</div>
+						<div style={{
+							gridArea: "title",
+							width: "100%",
+							display: 'flex',
+							justifyContent: 'center',
+							alignItems: 'center',
+
+						}}>
+							BİZE ULAŞIN
+						</div>
+						<div style={{
+							gridArea: "content",
+							width: "100%",
+							textAlign: "center",
+
+						}}>
+							Her türlü soru,
+							destek ve
+							görüşleriniz için
+							bizimle iletişime
+							geçin.
+						</div>
+						<div style={{
+							gridArea: "button",
+							width: "100%",
+							textAlign: "center",
+							color: "#53beb3ff",
+							textDecoration: "underline",
+							cursor: "pointer",
+
+						}}>
+							İLETİŞİME GEÇ
+						</div>
+					</div>
+				</div>
 			</section>
 		</Layout>
 	);
