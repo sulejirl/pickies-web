@@ -354,6 +354,191 @@ export default function Home({
 						</div>
 					</div>
 				</div>
+				<div
+					style={{
+						width: "100%",
+						height: "600px",
+						background: " #beacd3ff",
+						position: "relative",
+						display: "grid",
+						gridTemplateColumns: " 60% 40%",
+						gridTemplateRows: "1fr",
+						gap: "0px 0px",
+						gridTemplateAreas: " 'text image'",
+						justifyItems: "center",
+						alignItems: "center",
+					}}>
+					<div style={{
+						display: 'grid',
+						gridArea: 'text',
+						width: "100%",
+						height: "100%",
+						gridTemplateRows: " 60% 40%",
+						gridTemplateColumns: "1fr",
+						gridTemplateAreas: " 'title' 'content'",
+
+					}}>
+
+						<div style={{ gridArea: 'title', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', padding: '40px 100px', color: 'white', fontSize: '50px', lineHeight: '55px', fontFamily: 'ClearFace', fontWeight: 'bold' }}>
+							Evden çıkarken,
+							yolda yürürken,
+							hatta mekanın
+							kapısındayken tek
+							tuşla siparişini ver!
+						</div>
+						<div style={{ gridArea: 'content', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', padding: '40px 100px', color: 'white', fontSize: '17px', lineHeight: '20px', fontFamily: 'Work Sans' }}>
+							KAFELERDE SIRA BEKLEMENİN NE KADAR CAN
+							SIKICI OLDUĞUNU BİLİYORUZ. BU SEBEPLE ARTIK
+							“PICKIES” DİYORUZ. PICKIES İLE SADECE 2 ADIMDA
+							SİPARİŞİNİZİ VEREBİLİR VE BİZE AYRILMIŞ TESLİM
+							NOKTALARINDAN SANİYELER İÇERİSİNDE TESLİM
+							ALABİLİRSİNİZ. SIRA BEKLEMEDEN ALINAN
+							KAHVENİN TADI DA DAHA LEZZETLİ GELMİYOR MU?
+						</div>
+					</div>
+					<div style={{ gridArea: 'image', position: 'relative', display: 'flex', justifyContent: 'flex-start', alignItems: 'center', width: '100%', height: '100%' }}>
+						<Image
+							src={"/images/fifthRowImage.png"}
+							alt="Line1"
+							fill
+							style={{
+								objectFit: "cover",
+							}}
+						/>
+					</div>
+
+				</div>
+				<div
+					style={{
+						width: "100%",
+						height: "600px",
+						background: " #fffdedff",
+						position: "relative",
+						display: "grid",
+						gridTemplateColumns: " 40% 60%",
+						gridTemplateRows: "1fr",
+						gap: "0px 0px",
+						gridTemplateAreas: " 'image text'",
+						justifyItems: "center",
+						alignItems: "center",
+					}}>
+					<div style={{ gridArea: 'image', position: 'relative', display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-start', width: '100%', height: '100%' }}>
+						<Image
+							src={"/images/sixthRowImage.png"}
+							alt="Line1"
+							width={400}
+							height={400}
+							style={{
+								objectFit: "cover",
+							}}
+						/>
+					</div>
+					<div style={{
+						display: 'grid',
+						gridArea: 'text',
+						width: "100%",
+						height: "100%",
+						gridTemplateRows: " 60% 40%",
+						gridTemplateColumns: "1fr",
+						gridTemplateAreas: " 'title' 'content'",
+
+					}}>
+
+						<div style={{ gridArea: 'title', display: 'flex', textAlign: 'right', justifyContent: 'center', alignItems: 'flex-end', padding: '40px 150px 40px 50px', color: '#53beb3ff', fontSize: '50px', lineHeight: '55px', fontFamily: 'ClearFace', fontWeight: 'bold' }}>
+							Topluluk sayfası
+							üzerinden
+							arkadaşlarınla
+							etkileşimde kal!
+						</div>
+						<div style={{ gridArea: 'content', display: 'flex', textAlign: 'right', justifyContent: 'center', alignItems: 'flex-start', padding: '40px 150px 40px 50px', color: '#53beb3ff', fontSize: '17px', lineHeight: '20px', fontFamily: 'Work Sans' }}>
+							ARKADAŞLARINIZ BİR SİPARİŞ VERDİĞİNDE ONLARIN
+							NEREDE OLDUĞUNU GÖREBİLİR VE ETKİLEŞİME
+							GEÇEBİLİRSİNİZ. BELKİ DE ONLARA İÇTİKLERİ KAHVENİN
+							YANINDA SÜRPRİZ BİR TATLI YOLLAMAK İSTERSİNİZ.
+							PICKIES İLE İSTER SIRA BEKLEMEDEN KAHVENİZİ ALIN,
+							İSTER BİR ARKADAŞINIZIN YANINA UĞRAYIP SELAM VERİN.
+							SEÇİMİ SİZE BIRAKIYORUZ!
+						</div>
+					</div>
+
+
+				</div>
+				<div
+					style={{
+						width: "100%",
+						height: "600px",
+						background: " #53beb3ff",
+						position: "relative",
+						display: "grid",
+						gridTemplateColumns: " 60% 40%",
+						gridTemplateRows: "1fr",
+						gap: "0px 0px",
+						gridTemplateAreas: " 'text image'",
+						justifyItems: "center",
+						alignItems: "center",
+					}}>
+					<div style={{
+						display: 'grid',
+						gridArea: 'text',
+						width: "100%",
+						height: "100%",
+						gridTemplateRows: " 60% 40%",
+						gridTemplateColumns: "1fr",
+						gridTemplateAreas: " 'title' 'content'",
+
+					}}>
+
+						<div style={{ gridArea: 'title', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', padding: '40px 50px 40px 150px', color: 'white', fontSize: '50px', lineHeight: '55px', fontFamily: 'ClearFace', fontWeight: 'bold' }}>
+							“Hediye Gönder”
+							özelliği ile
+							arkadaşlarına
+							dilediğini ısmarla!
+						</div>
+						<div style={{ gridArea: 'content', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', padding: '40px 50px 40px 150px', color: 'white', fontSize: '17px', lineHeight: '20px', fontFamily: 'Work Sans' }}>
+							PICKIES SADECE KULLANICISINI DEĞİL,
+							ONUN ARKADAŞLARINI DA DÜŞÜNÜR.
+							ARKADAŞLARINIZA BİR JEST YAPIP ONLARA BİR KAHVE YA
+							DA YEMEK ISMARLAMAK HOŞ OLMAZ MIYDI? PICKIES
+							UYGULAMASININ “HEDİYE GÖNDER” ÖZELLİĞİ İLE
+							ARKADAŞLARINIZA SÜRPRİZ YAPABİLİRSİNİZ.
+						</div>
+					</div>
+					<div style={{ gridArea: 'image', position: 'relative', display: 'flex', justifyContent: 'flex-start', alignItems: 'center', width: '100%', height: '100%' }}>
+						<Image
+							src={"/images/seventhRowImage.png"}
+							alt="Line1"
+							fill
+							style={{
+								objectFit: "cover",
+							}}
+						/>
+					</div>
+
+				</div>
+				<div
+					style={{
+						width: "100%",
+						height: "300px",
+						background: " #fffdedff",
+						position: "relative",
+						display: "grid",
+						gridTemplateColumns: " 1fr",
+						gridTemplateRows: "auto auto auto",
+						gap: "0px 0px",
+						gridTemplateAreas: " 'title' 'input' 'socialmedia'",
+						justifyItems: "center",
+						alignItems: "center",
+					}}>
+					<div style={{ gridArea: 'title', fontFamily:'ClearFace', fontWeight:'bold',fontSize:'24px' }}>
+						Gelişmelerden haberdar olabilmek için bültene kayıt olun.
+					</div>
+					<div style={{ gridArea: 'input' }}>
+						asd
+					</div>
+					<div style={{ gridArea: 'socialmedia' }}>
+						asd
+					</div>
+				</div>
 			</section>
 		</Layout>
 	);
