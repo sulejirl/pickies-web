@@ -5,7 +5,7 @@ import style from "./contact.module.css"
 export const Contact = () => {
   return (
     <div className={style.container}>
-      <h1>İletişim</h1>
+      <h1>İletişim</h1> 
       <div>Bize email ve whatsapp hattımızdan ulaşabilirsiniz</div>
       <h4>Telefon</h4>
       <div>+905424862454</div>
