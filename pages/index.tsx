@@ -6,6 +6,8 @@ import Link from "next/link";
 import Date from "../components/date";
 import { GetStaticProps } from "next";
 import Image from "next/image";
+import { FormControl, FormLabel, FormHelperText, TextField, Button, InputAdornment } from '@mui/material'
+import FormGroup from "@mui/material/FormGroup";
 
 export default function Home({
 	allPostsData,
@@ -22,6 +24,67 @@ export default function Home({
 				<title>{siteTitle}</title>
 			</Head>
 			<section>
+				<div
+					style={{
+						width: "100%",
+						height: "200px",
+						position: "relative",
+						display: "flex",
+						justifyContent: "center",
+						alignContent: "center",
+						padding: '0 100px'
+					}}
+				>
+					<div style={{
+						textAlign: "left",
+						color: "#f7b76aff",
+						textDecoration: "underline",
+						cursor: "pointer",
+						position: 'absolute',
+						left: 0,
+						right: 0,
+						top:20,
+						marginLeft: '100px',
+						marginRight: 'auto',
+						width: '100px'
+					}}>
+						MENÜ
+					</div>
+					<div style={{
+						position: 'absolute',
+						left: 0,
+						right: 0,
+						top:20,
+						marginLeft: 'auto',
+						marginRight: 'auto',
+						width: '300px'
+					}}>
+						<Image
+							src={"/images/logoMain.png"}
+							alt="Line1"
+							height={120}
+							width={300}
+
+						/>
+					</div>
+					<div
+						style={{
+							textAlign: "right",
+							color: "#f7b76aff",
+							textDecoration: "underline",
+							cursor: "pointer",
+							position: 'absolute',
+							left: 0,
+							right: 0,
+							top:20,
+							marginLeft: 'auto',
+							marginRight: '100px',
+							width: '200px'
+
+						}}>
+						FİRMA GİRİŞİ
+					</div>
+				</div>
 				<div
 					style={{
 						width: "100%",
@@ -159,6 +222,7 @@ export default function Home({
 					gridTemplateAreas: " 'partner user contactus'",
 					justifyItems: "center",
 					alignItems: "center",
+					fontWeight: "bold",
 					fontFamily: "Work Sans",
 				}}>
 					<div style={{
@@ -169,7 +233,7 @@ export default function Home({
 
 						gap: "10px 0px",
 						display: "grid",
-						gridTemplateRows: " 100px 30px 200px 50px",
+						gridTemplateRows: " 10fr 3fr 20fr 5fr",
 						gridTemplateColumns: "1fr",
 						gridTemplateAreas: " 'icon' 'title' 'content' 'button'	",
 						padding: '50px',
@@ -230,7 +294,7 @@ export default function Home({
 
 						gap: "10px 0px",
 						display: "grid",
-						gridTemplateRows: " 100px 30px 200px 50px",
+						gridTemplateRows: " 10fr 3fr 20fr 5fr",
 						gridTemplateColumns: "1fr",
 						gridTemplateAreas: " 'icon' 'title' 'content' 'button'	",
 						padding: '50px',
@@ -529,18 +593,362 @@ export default function Home({
 						justifyItems: "center",
 						alignItems: "center",
 					}}>
-					<div style={{ gridArea: 'title', fontFamily:'ClearFace', fontWeight:'bold',fontSize:'24px' }}>
+					<div style={{ gridArea: 'title', fontFamily: 'ClearFace', fontWeight: 'bold', fontSize: '24px' }}>
 						Gelişmelerden haberdar olabilmek için bültene kayıt olun.
 					</div>
 					<div style={{ gridArea: 'input' }}>
-						asd
+						<form onSubmit={() => { }} id="demo">
+							<FormControl>
+								<FormGroup row>
+									<TextField
+										// sx={{ '--Input-decorator-childHeight': '45px' }}
+										placeholder="E-POSTA ADRESİNİZİ GİRİNİZ"
+										type="email"
+										required
+
+										sx={{ borderRadius: '5px', backgroundColor: '#fffdedff', borderTopRightRadius: 0, borderBottomRightRadius: 0, width: '500px' }}
+										size="small"
+										InputProps={{
+											sx: { borderTopRightRadius: 0, borderBottomRightRadius: 0, }
+
+										}}
+
+									/>
+									<Button
+										variant="contained"
+										color="primary"
+										type="submit"
+										sx={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0, backgroundColor: '#ff8c00', color: 'white' }}
+									>
+										Gönder
+									</Button>
+								</FormGroup>
+
+								{/* {data.status === 'failure' && (
+									<FormHelperText
+										sx={(theme) => ({ color: theme.vars.palette.danger[400] })}
+									>
+										Oops! something went wrong, please try again later.
+									</FormHelperText>
+								)}
+								{data.status === 'sent' && (
+									<FormHelperText
+										sx={(theme) => ({ color: theme.vars.palette.primary[400] })}
+									>
+										You are all set!
+									</FormHelperText>
+								)} */}
+							</FormControl>
+						</form>
 					</div>
-					<div style={{ gridArea: 'socialmedia' }}>
-						asd
+					<div style={{ gridArea: 'socialmedia', display: 'flex', justifyContent: "space-around", width: '100%', padding: '0 100px' }}>
+						<div style={{ display: 'flex', alignItems: 'center', }}>
+							<Image
+								src={"/images/instagram.png"}
+								alt="Line1"
+								height={25}
+								width={25}
+							/>
+
+							<div style={{ marginLeft: '8px', fontWeight: 'bold', fontFamily: "Work Sans", }}>@pickiesapp</div>
+						</div>
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<Image
+								src={"/images/twitter.png"}
+								alt="Line1"
+								height={25}
+								width={30}
+							/>
+							<div style={{ marginLeft: '8px', fontWeight: 'bold', fontFamily: "Work Sans", }}>@pickiesapp</div>
+						</div>
+						<div style={{ display: 'flex', alignItems: 'center', }}>
+							<Image
+								src={"/images/website.png"}
+								alt="Line1"
+								height={25}
+								width={30}
+							/>
+							<div style={{ marginLeft: '8px', fontWeight: 'bold', fontFamily: "Work Sans", }}>pickiesapp.com</div>
+						</div>
+					</div>
+				</div>
+				<div
+					style={{
+						width: "100%",
+						height: "400px",
+						background: " #f7b76aff",
+						position: "relative",
+						display: "grid",
+						gridTemplateColumns: " 1fr",
+						gridTemplateRows: "4fr 1fr",
+						gap: "0px 0px",
+						gridTemplateAreas: " 'main' 'secondary'",
+						justifyItems: "center",
+						alignItems: "center",
+					}}>
+					<div style={{ width: '100%', gridArea: 'main', display: 'grid', gridTemplateAreas: "'logo menu'", gridTemplateColumns: "1fr 2fr", gridTemplateRows: "1fr", padding: '0 150px 20px 150px' }}>
+						<div style={{ position: 'relative', gridArea: 'logo' }}>
+							<Image
+								src={"/images/logo.png"}
+								alt="Line1"
+								fill
+								style={{ paddingTop: '100px' }}
+							/></div>
+						<div style={{
+							gridArea: 'menu',
+							display: 'grid',
+							gridTemplateColumns: " 1fr 1fr 1fr",
+							gridTemplateRows: "1fr",
+							gap: "0px 10px",
+							gridTemplateAreas: " 'aboutus partnership more'",
+							justifyItems: "center",
+							alignItems: "center",
+							paddingTop: '100px',
+							marginLeft: '20px'
+						}}>
+							<div style={{
+								gridArea: "aboutus",
+								width: "100%",
+								height: "100%",
+								gap: "10px 0px",
+								display: "grid",
+								gridTemplateRows: " 1fr 3fr",
+								gridTemplateColumns: "1fr",
+								gridTemplateAreas: "  'title' 'button'	",
+								color: 'white',
+								borderRight: "1px solid white",
+
+
+							}}>
+								<div style={{
+									gridArea: "title",
+									width: "100%",
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+
+								}}>
+									HAKKIMIZDA
+								</div>
+								<div style={{
+									gridArea: "button",
+								}}>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Biz Kimiz
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Kariyer
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Ortaklıklar
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Değerlerimiz
+									</div>
+								</div>
+
+							</div>
+							<div style={{
+								gridArea: "partnership",
+								width: "100%",
+								gap: "10px 0px",
+								display: "grid",
+								gridTemplateRows: " 1fr 3fr",
+								gridTemplateColumns: "1fr",
+								gridTemplateAreas: "  'title' 'button'	",
+								color: 'white',
+								borderRight: "1px solid white",
+
+							}}>
+								<div style={{
+									gridArea: "title",
+									width: "100%",
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+
+								}}>
+									ORTAKLIK
+								</div>
+								<div style={{
+									gridArea: "button",
+								}}>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Ortaklık Şartları
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Gizlilik Kuralları
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										İletişim
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Yardım
+									</div>
+								</div>
+							</div>
+							<div style={{
+								gridArea: "more",
+								width: "100%",
+								gap: "10px 0px",
+								display: "grid",
+								gridTemplateRows: " 1fr 3fr",
+								gridTemplateColumns: "1fr",
+								gridTemplateAreas: "  'title' 'button'	",
+								color: 'white',
+
+							}}>
+								<div style={{
+									gridArea: "title",
+									width: "100%",
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+
+								}}>
+									DAHA FAZLASI
+								</div>
+								<div style={{
+									gridArea: "button",
+								}}>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Hediye Sistemi
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Sipariş Kuralları
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										Bilgi Toplum Hizmeti
+									</div>
+									<div style={{
+										gridArea: "button",
+										width: "100%",
+										textAlign: "center",
+										color: "white",
+										cursor: "pointer",
+
+									}}>
+										S.S.S
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style={{ width: '100%', gridArea: 'secondary', borderTop: '1px solid white', borderBottom: '1px solid white', display: 'flex', justifyContent: 'space-around', fontSize: '16px', color: 'white', padding: '10px 150px' }}>
+						<div style={{
+							gridArea: "button",
+							width: "100%",
+							textAlign: "center",
+							color: "white",
+							cursor: "pointer",
+
+						}}>GİZLİLİK POLİTİKASI</div>
+						<div style={{
+							gridArea: "button",
+							width: "100%",
+							textAlign: "center",
+							color: "white",
+							cursor: "pointer",
+
+						}}>İÇERİK POLİTİKASI</div>
+						<div style={{
+							gridArea: "button",
+							width: "100%",
+							textAlign: "center",
+							color: "white",
+							cursor: "pointer",
+
+						}}>ÇEREZ TERCİHLERİ</div>
+						<div style={{
+							gridArea: "button",
+							width: "100%",
+							textAlign: "center",
+							color: "white",
+							cursor: "pointer",
+
+						}}>KULLANIM KOŞULLARI</div>
+
 					</div>
 				</div>
 			</section>
-		</Layout>
+		</Layout >
 	);
 }
 
