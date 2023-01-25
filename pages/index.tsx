@@ -644,7 +644,7 @@ export default function Home({
 					<div style={{ gridArea: 'socialmedia', display: 'flex', justifyContent: "space-around", width: '100%', padding: '0 100px' }}>
 						<div style={{ display: 'flex', alignItems: 'center', }}>
 							<Image
-								src={"/images/instagram.png"}
+								src={"/images/Instagram.png"}
 								alt="Line1"
 								height={25}
 								width={25}
@@ -689,7 +689,7 @@ export default function Home({
 					<div style={{ width: '100%', gridArea: 'main', display: 'grid', gridTemplateAreas: "'logo menu'", gridTemplateColumns: "1fr 2fr", gridTemplateRows: "1fr", padding: '0 150px 20px 150px' }}>
 						<div style={{ position: 'relative', gridArea: 'logo' }}>
 							<Image
-								src={"/images/logo.png"}
+								src={"/images/Logo.png"}
 								alt="Line1"
 								fill
 								style={{ paddingTop: '100px' }}
