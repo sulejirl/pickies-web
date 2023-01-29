@@ -1,0 +1,158 @@
+.container {
+    width: 100%;
+    height: 400px;
+    background: #f7b76aff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 'main' 'secondary';
+    justify-items: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 'logo menu';
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    padding: 0 150px 20px 150px;
+}
+
+.imageContainer {
+    grid-area: logo;
+    position: relative;
+}
+
+.image {
+    padding-top: 100px;
+}
+
+.menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: 'aboutus partnership more';
+    justify-items: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-left: 20px;
+}
+
+.buttonContainer {
+    width: 100%;
+    height: 100%;
+    gap: 10px 0px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'title' 'button';
+    color: white;
+}
+
+.aboutus {
+    grid-area: aboutus;
+    border-right: 1px solid white;
+}
+
+.partnership {
+    grid-area: partnership;
+    border-right: 1px solid white;
+}
+
+.more {
+    grid-area: more;
+}
+
+.title {
+    grid-area: title;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    grid-area: button;
+}
+
+.buttonItem {
+    width: 100%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.secondary {
+    width: 100%;
+    grid-area: secondary;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    color: white;
+    padding: 10px 150px;
+}
+
+.secondaryButton {
+    grid-area: button;
+    width: 100%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+
+    .container {
+        height: auto
+    }
+
+    .main {
+        padding: 20px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'logo' 'menu';
+
+    }
+
+    .imageContainer {
+        height: 100px !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .image {
+        padding: 0px 30px;
+
+    }
+
+    .menu {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto;
+        grid-template-areas: 'aboutus' 'partnership' 'more';
+        padding-top: 0px;
+        margin-left: 0px;
+    }
+
+    .aboutus,
+    .partnership {
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding: 10px 0px;
+    }
+
+    .secondary {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .secondaryButton {
+    }
+}

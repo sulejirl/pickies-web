@@ -1,0 +1,120 @@
+.container {
+    width: 100%;
+    height: 600px;
+    padding: 50px 50px;
+    background: #fffdedff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: 'partner user contactus';
+    justify-items: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Work Sans;
+}
+
+.gridContainer {
+    width: 100%;
+    height: 100%;
+    gap: 10px 0px;
+    display: grid;
+    grid-template-rows: 10fr 3fr 20fr 5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'icon' 'title' 'content' 'button';
+    padding: 50px;
+}
+
+.partner {
+    grid-area: partner;
+    border-right: 1px solid black;
+
+}
+
+.user {
+    grid-area: user;
+    border-right: 1px solid black;
+}
+
+.contactus {
+    grid-area: contactus;
+}
+
+.icon {
+    grid-area: icon;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    grid-area: title;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    grid-area: content;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    grid-area: button;
+    width: 100%;
+    text-align: center;
+    color: #53beb3ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        height:auto;
+        grid-template-areas: 'partner' 'user' 'contactus';
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+    }
+
+    .partner,
+    .user {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .gridContainer {
+        padding: 0px;
+        grid-template-rows: 10fr 3fr 10fr 5fr;
+
+    }
+
+    .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .container {
+        height:auto;
+    }
+    .gridContainer {
+        padding: 10px;
+        grid-template-rows: 10fr 3fr 10fr 5fr;
+
+    }
+    .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 20px;
+    }
+}

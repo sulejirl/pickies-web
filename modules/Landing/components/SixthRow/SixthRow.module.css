@@ -1,0 +1,106 @@
+.container {
+    width: 100%;
+    height: 600px;
+    background: #fffdedff;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 'image text';
+}
+
+.imageContainer {
+    grid-area: image;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+.imageContainer img {
+    padding-left: 50px;
+    margin-top: 50px;
+    max-width: 100% !important;
+    height: 400px !important;
+}
+
+.text {
+    display: grid;
+    grid-area: text;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'title' 'content';
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px 100px 40px 50px;
+    color: #53beb3ff;
+    font-size: 50px;
+    line-height: 55px;
+    font-family: ClearFace;
+    font-weight: bold;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 100px 40px 50px;
+    color: #53beb3ff;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: Work Sans;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        grid-template-areas: 'image' 'text';
+        grid-template-rows:auto auto;
+        grid-template-columns: 1fr;
+        padding: 20px;
+
+    }
+
+    .text {
+        grid-template-rows: auto auto;
+    }
+
+    .title {
+        padding: 10px 20px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .content {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .imageContainer {
+        height: 200px;
+        justify-content: center;
+        
+
+    }
+    .imageContainer img {
+        margin-top: 0;
+        padding-left: 0;
+        height: 200px !important;
+        width: 100% !important;
+        object-fit: contain !important;
+    }
+    .title,
+    .content {
+        text-align: left;
+    }
+}
