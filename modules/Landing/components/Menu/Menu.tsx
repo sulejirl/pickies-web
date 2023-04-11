@@ -3,13 +3,17 @@ import Image from 'next/image'
 import styles from './Menu.module.css'
 
 export const Menu = () => {
+    
+    const handleClick = () => {
+        window.open("https://customer.pickiesapp.com/", "_blank")
+    }
     return (
         <div
             className={styles.container}
         >
-            <div className={styles.menuButton}>
+            {/* <div className={styles.menuButton}>
                 MENÜ
-            </div>
+            </div> */}
             <div className={styles.logo}>
                 <Image
                     src={"/images/logoMain.png"}
@@ -18,7 +22,7 @@ export const Menu = () => {
                 />
             </div>
             <div
-                className={styles.customerRedirectButton}>
+                className={styles.customerRedirectButton} onClick={handleClick}>
                 FİRMA GİRİŞİ
             </div>
         </div>

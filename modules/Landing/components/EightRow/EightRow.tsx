@@ -50,6 +50,11 @@ const buttonStyles = {
 }
 
 export const EightRow = () => {
+
+    const handleClick = (link: string) => {
+        window.open(link, "_blank")
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.title}>
@@ -101,7 +106,7 @@ export const EightRow = () => {
             </div>
             <div className={styles.socialmedia}>
 
-                <div className={styles.socialmediaItem}>
+                <div className={styles.socialmediaItem} onClick={() => handleClick('https://www.instagram.com/pickiesapp/')}>
                     <div className={styles.socialmediaIcon}>
                         <Image
                             src={"/images/Instagram.png"}
@@ -113,7 +118,7 @@ export const EightRow = () => {
 
                     <div className={styles.socialmediaText}>@pickiesapp</div>
                 </div>
-                <div className={styles.socialmediaItem}>
+                <div className={styles.socialmediaItem} onClick={() => handleClick('https://twitter.com/pickiesapp')}>
                     <div className={styles.socialmediaIcon}>
                         <Image
                             src={"/images/twitter.png"}
@@ -124,7 +129,7 @@ export const EightRow = () => {
                     </div>
                     <div className={styles.socialmediaText}>@pickiesapp</div>
                 </div>
-                <div className={styles.socialmediaItem}>
+                <div className={styles.socialmediaItem} onClick={() => handleClick('https://www.pickiesapp.com/')}>
                     <div className={styles.socialmediaIcon}>
                         <Image
                             src={"/images/website.png"}

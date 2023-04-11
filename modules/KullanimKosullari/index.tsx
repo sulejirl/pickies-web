@@ -1,0 +1,1 @@
+export { KullanimKosullari } from './KullanimKosullari'

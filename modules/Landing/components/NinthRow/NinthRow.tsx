@@ -1,10 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './NinthRow.module.css'
+import { useRouter } from "next/router";
+
 export const NinthRow = () => {
+    const router = useRouter();
     return (
         <div className={styles.container}>
-            <div className={styles.main}>
+            {/* <div className={styles.main}>
                 <div className={styles.imageContainer}>
                     <Image
                         src={"/images/Logo.png"}
@@ -73,12 +76,12 @@ export const NinthRow = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className={styles.secondary}>
                 <div className={styles.secondaryButton}>GİZLİLİK POLİTİKASI</div>
                 <div className={styles.secondaryButton}>İÇERİK POLİTİKASI</div>
                 <div className={styles.secondaryButton}>ÇEREZ TERCİHLERİ</div>
-                <div className={styles.secondaryButton}>KULLANIM KOŞULLARI</div>
+                <div className={styles.secondaryButton} onClick={()=>{router.push('/kullanim-kosullari')}}>KULLANIM KOŞULLARI</div>
             </div>
         </div>
     )

@@ -17,12 +17,8 @@ export const ThirdRow = () => {
                 </div>
             </div>
             <div className={styles.content}>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                dolore magna aliquam erat volutpat. Ut wisi enim ad
-                minim veniam, quis nostrud exerci tation ullamcorper
-                suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat.
+                Pickies, Gel-Al siparişlere odaklanan, yiyecek ve içeceklerinizi önden sipariş etmenin yeni ve keyifli bir yoludur. Çevrenizdeki üye kahve dükkanlarını, yemek yerlerini keşfedin, sipariş oluşturup Gel-Al siparişlerde yeni dönemin parçası olun.
+
             </div>
         </div>
     )
