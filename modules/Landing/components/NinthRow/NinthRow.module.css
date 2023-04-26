@@ -111,7 +111,7 @@
 @media (max-width:768px) {
 
     .container {
-        height: auto
+        height: 150px
     }
 
     .main {

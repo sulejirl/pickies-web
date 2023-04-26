@@ -80,7 +80,7 @@ export const NinthRow = () => {
             <div className={styles.secondary}>
                 <div className={styles.secondaryButton}>GİZLİLİK POLİTİKASI</div>
                 <div className={styles.secondaryButton}>İÇERİK POLİTİKASI</div>
-                <div className={styles.secondaryButton}>ÇEREZ TERCİHLERİ</div>
+                <div className={styles.secondaryButton} onClick={()=>{router.push('/cerez-politikasi')}}>ÇEREZ TERCİHLERİ</div>
                 <div className={styles.secondaryButton} onClick={()=>{router.push('/kullanim-kosullari')}}>KULLANIM KOŞULLARI</div>
             </div>
         </div>

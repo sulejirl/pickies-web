@@ -26,3 +26,13 @@ img {
   max-width: 100%;
   display: block;
 }
+table tr td {
+  border: 1px solid gray;
+}
+table td, table th {
+  padding:0.3rem;
+}
+thead {
+  background-color: #f7b76a;
+  color: white;
+}
