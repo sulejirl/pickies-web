@@ -26,7 +26,6 @@ export default function Page() {
 
     const html = data?.documents[0]?.content.html || "";
     const title = data?.documents[0]?.title || "";
-    console.log(data, loading, error)
 
     return (
 
