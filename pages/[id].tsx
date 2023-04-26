@@ -27,6 +27,10 @@ export default function Page() {
     const html = data?.documents[0]?.content.html || "";
     const title = data?.documents[0]?.title || "";
 
+    if(loading) return (<div>Loading...</div>)
+    if(error) return (<div>Error</div>)
+    if(!html) router.push('/')
+
     return (
 
         <div style={{ margin: '2rem' }}>
