@@ -19,8 +19,14 @@
       "@modules": ["modules"],
       "@modules/*": ["modules/*"],
       "@components": ["components"],
-    }
+      "@app": ["app"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }
