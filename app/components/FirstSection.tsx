@@ -5,7 +5,7 @@ export const FirstSection = () => {
 	return (
 		<div className='w-full bg-[#FFBC59] px-[20px] py-[50px] bg-blend-color-burn md:px-[90px] md:py-[90px]'>
 			<div className='relative h-[36px] w-[101px] md:h-[75px] md:w-[210px]'>
-				<Image src='/images/logo.png' fill alt='logo' />
+				<Image src='/images/logoWhite.png' fill alt='logo' />
 			</div>
 			<div className='flex flex-col justify-between md:flex-row'>
 				<div>
