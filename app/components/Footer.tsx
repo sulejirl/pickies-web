@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export const Footer = () => {
 	return (
-		<div className='grid w-full gap-4 px-[90px] py-[70px]'>
-			<div className='mx-8 flex justify-between'>
+		<div className='grid w-full gap-4 px-[40px] py-[70px] md:px-[90px]'>
+			<div className='flex flex-col justify-start gap-7 md:mx-8 md:flex-row md:justify-between md:gap-0'>
 				<div>
 					<Image
 						src='/images/logoDark.png'
@@ -14,7 +14,7 @@ export const Footer = () => {
 						height={47}
 					/>
 				</div>
-				<div className='flex items-center justify-center gap-8 '>
+				<div className='flex gap-8 md:items-center md:justify-center '>
 					<Image
 						src='/images/youtube.png'
 						alt='youtube'
@@ -37,8 +37,8 @@ export const Footer = () => {
 				</div>
 			</div>
 			<Divider />
-			<div className='mx-8 flex items-center justify-between  py-4'>
-				<div className='flex gap-[35px]'>
+			<div className='flex flex-col items-center py-4  md:mx-8 md:flex-row md:justify-between'>
+				<div className='flex flex-col gap-[35px] md:flex-row'>
 					<div className='text-sm'>İŞLETMELER</div>
 					<div className='text-sm'>SSS</div>
 					<div className='text-sm'>YARDIM</div>
@@ -46,7 +46,7 @@ export const Footer = () => {
 					<div className='text-sm'>GİZLİLİK</div>
 					<div className='text-sm'>İLETİŞİM</div>
 				</div>
-				<div>
+				<div className='mt-7 md:mt-0'>
 					<div className='flex gap-8'>
 						<div>
 							<Image

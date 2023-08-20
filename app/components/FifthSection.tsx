@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 export const FifthSection = () => {
 	return (
-		<div className='grid w-full gap-8 bg-[#F8F8F8] px-[90px] py-[90px]'>
-			<div className='text-[56px] font-semibold leading-snug text-[#424557]'>
+		<div className='grid w-full gap-8 bg-[#F8F8F8] px-[20px] py-[90px] md:px-[90px]'>
+			<div className='text-[30px] font-semibold leading-snug text-[#424557] md:text-[56px]'>
 				Kolay. Hızlı. Eğlenceli.
 			</div>
-			<div className='text-2xl font-normal text-[#424557]'>
+			<div className='text-[20px] font-normal text-[#424557] md:text-2xl'>
 				Uygulamayı Hemen İndir
 			</div>
 			<div className='flex gap-4'>

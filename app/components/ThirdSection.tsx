@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 export const ThirdSection = () => {
 	return (
-		<div className='grid w-full gap-[32px] bg-[#F8F8F8] px-[90px] py-[76px]'>
-			<div className='text-[56px] font-semibold leading-snug text-[#424557]'>
+		<div className='grid w-full gap-[32px] bg-[#F8F8F8] px-[20px] py-[76px] md:px-[90px]'>
+			<div className='text-[30px] font-semibold leading-snug text-[#424557] md:text-[56px]'>
 				Bize Katıl ve yeni bir topluluğun parçası ol. Pick’lemeye başla!
 			</div>
 			<div className='text-2xl font-normal text-[#424557]'>
