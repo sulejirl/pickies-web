@@ -21,7 +21,7 @@ export const FirstSection = () => {
 					<Swiper direction='vertical'>
 						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
 							<Image
-								src='/images/coffee.png'
+								src='/images/coffee.svg'
 								alt='coffee'
 								fill
 								objectFit='contain'
@@ -29,7 +29,7 @@ export const FirstSection = () => {
 						</div>
 						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
 							<Image
-								src='/images/drink.png'
+								src='/images/drink.svg'
 								alt='drink'
 								fill
 								objectFit='contain'
@@ -37,7 +37,7 @@ export const FirstSection = () => {
 						</div>
 						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
 							<Image
-								src='/images/burger.png'
+								src='/images/burger.svg'
 								alt='burger'
 								fill
 								objectFit='contain'
@@ -45,7 +45,15 @@ export const FirstSection = () => {
 						</div>
 						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
 							<Image
-								src='/images/sushi.png'
+								src='/images/pizza.svg'
+								alt='pizza'
+								fill
+								objectFit='contain'
+							/>
+						</div>
+						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
+							<Image
+								src='/images/sushi.svg'
 								alt='sushi'
 								fill
 								objectFit='contain'
