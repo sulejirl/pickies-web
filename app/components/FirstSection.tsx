@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '../common';
+import { Button, Swiper } from '../common';
 export const FirstSection = () => {
 	return (
 		<div className='w-full bg-[#FFBC59] px-[20px] py-[50px] bg-blend-color-burn md:px-[90px] md:py-[90px]'>
@@ -17,13 +17,41 @@ export const FirstSection = () => {
 						{/* <Button variant='secondary'>APP'İ İNDİR</Button> */}
 					</div>
 				</div>
-				<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
-					<Image
-						src='/images/coffee.png'
-						alt='coffee'
-						fill
-						objectFit='contain'
-					/>
+				<div>
+					<Swiper direction='vertical'>
+						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
+							<Image
+								src='/images/coffee.png'
+								alt='coffee'
+								fill
+								objectFit='contain'
+							/>
+						</div>
+						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
+							<Image
+								src='/images/drink.png'
+								alt='drink'
+								fill
+								objectFit='contain'
+							/>
+						</div>
+						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
+							<Image
+								src='/images/burger.png'
+								alt='burger'
+								fill
+								objectFit='contain'
+							/>
+						</div>
+						<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
+							<Image
+								src='/images/sushi.png'
+								alt='sushi'
+								fill
+								objectFit='contain'
+							/>
+						</div>
+					</Swiper>
 				</div>
 			</div>
 		</div>
