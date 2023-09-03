@@ -1,6 +1,7 @@
 import React from 'react';
 import { gql } from '@apollo/client';
 import { getClient } from 'lib/client';
+import parse from 'html-react-parser';
 
 const GET_DOCUMENT = gql`
 	query Assets($where: DocumentWhereInput!) {
@@ -14,12 +15,16 @@ const GET_DOCUMENT = gql`
 	}
 `;
 
-export default async function Page({ params }) {
+export default async function Page({ params }: any) {
 	const { data }: any = await getClient().query({
 		query: GET_DOCUMENT,
 		variables: { where: { documentId: params.id } },
 	});
-	console.log(data.documents[0].content.html);
+	const html = parse(data?.documents[0]?.content.html || '');
 
-	return <div>{data.documents[0].content.html}</div>;
+	return (
+		<div className='mx-28 my-10'>
+			<div>{html}</div>
+		</div>
+	);
 }

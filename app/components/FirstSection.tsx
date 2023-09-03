@@ -14,11 +14,16 @@ export const FirstSection = () => {
 					</div>
 					<div className='ml-4 mt-4 flex gap-4 md:ml-0 md:mt-14 md:gap-8'>
 						<Button variant='light'>ÜYE İŞLETMEYİM</Button>
-						<Button variant='secondary'>APP'İ İNDİR</Button>
+						{/* <Button variant='secondary'>APP'İ İNDİR</Button> */}
 					</div>
 				</div>
-				<div className='relative h-[500px] w-[350px] md:h-[500px] md:w-[600px]'>
-					<Image src='/images/coffee.png' alt='coffee' fill />
+				<div className='relative h-[550px] w-[370px] self-center md:h-[700px] md:w-[650px]'>
+					<Image
+						src='/images/coffee.png'
+						alt='coffee'
+						fill
+						objectFit='contain'
+					/>
 				</div>
 			</div>
 		</div>

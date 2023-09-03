@@ -39,7 +39,6 @@ export const Footer = () => {
 			<Divider />
 			<div className='flex flex-col items-center py-4  md:mx-8 md:flex-row md:justify-between'>
 				<div className='flex flex-col gap-[35px] md:flex-row'>
-					<div className='text-sm'>İŞLETMELER</div>
 					<div className='text-sm'>SSS</div>
 					<div className='text-sm'>YARDIM</div>
 					<div className='text-sm'>ŞARTLAR</div>
@@ -69,7 +68,7 @@ export const Footer = () => {
 			</div>
 			<Divider />
 			<div className='flex justify-between'>
-				<div>© 2023 Pickies Ltd</div>
+				<div>© 2023 Pickies</div>
 				<div>All rights reserved</div>
 			</div>
 		</div>

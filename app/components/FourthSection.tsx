@@ -7,7 +7,12 @@ export const FourthSection = () => {
 		<div className='grid w-full grid-rows-2 gap-[21px] px-[20px] py-[130px] md:grid-cols-2 md:grid-rows-1 md:px-[90px] '>
 			<div className='row-span-1 md:col-span-1'>
 				<div className='relative h-[300px] w-[350px] md:h-[566px] md:w-[489px]'>
-					<Image src='/images/illustration4.png' fill alt='illustration4' />
+					<Image
+						src='/images/illustration4.png'
+						fill
+						alt='illustration4'
+						objectFit='contain'
+					/>
 				</div>
 			</div>
 			<div className='row-span-1 place-self-center md:col-span-1'>
@@ -22,9 +27,9 @@ export const FourthSection = () => {
 						beklemeden siparişini teslim al.
 					</div>
 				</div>
-				<div className='mt-5 flex justify-center md:mt-[70px] md:justify-start'>
+				{/* <div className='mt-5 flex justify-center md:mt-[70px] md:justify-start'>
 					<Button>HEMEN İNDİR</Button>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
