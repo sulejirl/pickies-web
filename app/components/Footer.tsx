@@ -16,12 +16,12 @@ export const Footer = () => {
 					/>
 				</div>
 				<div className='flex gap-8 md:items-center md:justify-center '>
-					<Image
+					{/* <Image
 						src='/images/youtube.png'
 						alt='youtube'
 						width={24}
 						height={24}
-					/>
+					/> */}
 					<Link href={'https://twitter.com/pickiesapp'} target='_blank'>
 						<Image
 							src='/images/twitter.png'
@@ -35,12 +35,12 @@ export const Footer = () => {
 						<Image src='/images/insta.png' alt='insta' width={24} height={24} />
 					</Link>
 
-					<Image
+					{/* <Image
 						src='/images/facebook.png'
 						alt='facebook'
 						width={13}
 						height={24}
-					/>
+					/> */}
 				</div>
 			</div>
 			<Divider />
