@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button, Swiper } from '../common';
+import Link from 'next/link';
 export const FirstSection = () => {
 	return (
 		<div className='w-full bg-[#FFBC59] px-[20px] py-[50px] bg-blend-color-burn md:px-[90px] md:py-[90px]'>
@@ -13,7 +14,10 @@ export const FirstSection = () => {
 						Pickies ike siparişini oluştur sıra beklemeden teslim al
 					</div>
 					<div className='ml-4 mt-4 flex gap-4 md:ml-0 md:mt-14 md:gap-8'>
-						<Button variant='light'>ÜYE İŞLETMEYİM</Button>
+						<Link href='https://customer.pickiesapp.com/' target='_blank'>
+							<Button variant='light'>ÜYE İŞLETMEYİM</Button>
+						</Link>
+
 						{/* <Button variant='secondary'>APP'İ İNDİR</Button> */}
 					</div>
 				</div>

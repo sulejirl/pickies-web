@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const FifthSection = () => {
 	return (
@@ -12,20 +13,30 @@ export const FifthSection = () => {
 			</div>
 			<div className='flex gap-4'>
 				<div>
-					<Image
-						src='/images/applestoregreen.png'
-						width={133}
-						height={40}
-						alt='applestoregreen'
-					/>
+					<Link
+						href='https://apps.apple.com/tr/app/pickies/id1660462435'
+						target='_blank'
+					>
+						<Image
+							src='/images/applestoregreen.png'
+							width={133}
+							height={40}
+							alt='applestoregreen'
+						/>
+					</Link>
 				</div>
 				<div>
-					<Image
-						src='/images/playstoregreen.png'
-						width={133}
-						height={40}
-						alt='playstoregreen'
-					/>
+					<Link
+						href='https://play.google.com/store/apps/details?id=com.pickies'
+						target='_blank'
+					>
+						<Image
+							src='/images/playstoregreen.png'
+							width={133}
+							height={40}
+							alt='playstoregreen'
+						/>
+					</Link>
 				</div>
 			</div>
 		</div>

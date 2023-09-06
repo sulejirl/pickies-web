@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 export const ThirdSection = () => {
 	return (
 		<div className='grid w-full gap-[32px] bg-[#F8F8F8] px-[20px] py-[76px] md:px-[90px]'>
@@ -11,20 +12,30 @@ export const ThirdSection = () => {
 			</div>
 			<div className='flex gap-4'>
 				<div>
-					<Image
-						src='/images/applestore.png'
-						width={133}
-						height={40}
-						alt='applestore'
-					/>
+					<Link
+						href='https://apps.apple.com/tr/app/pickies/id1660462435'
+						target='_blank'
+					>
+						<Image
+							src='/images/applestore.png'
+							width={133}
+							height={40}
+							alt='applestore'
+						/>
+					</Link>
 				</div>
 				<div>
-					<Image
-						src='/images/playstore.png'
-						width={133}
-						height={40}
-						alt='playstore'
-					/>
+					<Link
+						href='https://play.google.com/store/apps/details?id=com.pickies'
+						target='_blank'
+					>
+						<Image
+							src='/images/playstore.png'
+							width={133}
+							height={40}
+							alt='playstore'
+						/>
+					</Link>
 				</div>
 			</div>
 		</div>
