@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const SeventhSection = () => {
 	return (
@@ -11,15 +12,17 @@ export const SeventhSection = () => {
 				Her türlü soru, destek ve görüşleriniz için bizimle iletişime
 				geçebilirsin!
 			</div>
-			<div className='flex gap-4  md:text-lg'>
-				<Image
-					src='/images/mailIcon.png'
-					width={33}
-					height={23}
-					alt='playstoregreen'
-				/>
-				info@pickiesapp.com
-			</div>
+			<Link href='mailto:info@pickiesapp.com'>
+				<div className='flex gap-4  md:text-lg'>
+					<Image
+						src='/images/mailIcon.png'
+						width={33}
+						height={23}
+						alt='playstoregreen'
+					/>
+					info@pickiesapp.com
+				</div>
+			</Link>
 		</div>
 	);
 };

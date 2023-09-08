@@ -49,10 +49,14 @@ export const Footer = () => {
 					<Link href='/yayinlanma-kriterleri' className='text-sm'>
 						SSS
 					</Link>
-					<div className='text-sm'>YARDIM</div>
-					<div className='text-sm'>ŞARTLAR</div>
-					<div className='text-sm'>GİZLİLİK</div>
-					<div className='text-sm'>İLETİŞİM</div>
+					{/* <div className='text-sm'>YARDIM</div> */}
+					<Link href='/pickies-kullanim-kosullari' className='text-sm'>
+						<div className='text-sm'>ŞARTLAR</div>
+					</Link>
+					<Link href='/kvkk-metni'>
+						<div className='text-sm'>AYDINLATMA METNİ</div>
+					</Link>
+					{/* <div className='text-sm'>İLETİŞİM</div> */}
 				</div>
 				<div className='mt-7 md:mt-0'>
 					<div className='flex gap-8'>
